@@ -1,38 +1,106 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    background-color: #B1B2FF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /*좌 중 우 배치*/
+    color:white;
+    height: 40px;
+    top: 0;
+    position: sticky;
+}
+nav > ul{
+    display: flex;
+    list-style: none;    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+nav a:hover{
+    background-color:#D2DAFF;
+    color:#B1B2FF;
+}
+nav i{
+    padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header{
+  background-color: #AAC4FF;
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header_left, .header_right{
+  margin: 20px;
+}
+.header_left{
+  width: 30%;
+  text-align: center;
+}
+.header_right{
+  width: 70%;
+}
+header > section{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main{
+  background-color: #D2DAFF;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+main > section{
+  width: 25%;
+  margin: 20px;
+  text-align: center;
+}
+img{
+  border-radius: 30%;
+}
+
+footer{
+  background-color: #EEF1FF;
+  display: flex;
+  /* justify-content: space-between; */
+  bottom: 0;
+  position: sticky;
+}
+footer > h2, footer > ul{
+  margin: 10px;
+}
+footer > h2{
+  /* width: 25%; */
+  font-size: 20px;
+}
+footer > ul{
+  list-style: none;
+}
+
+@media only screen and (max-width:600px) {
+  header > section {
+      flex-direction: column;
+      align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .header_left, .header_right {
+      width: 80%;        
+  }
+  main {
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+      align-items: center;
+  }
+  main > section{
+      width: 80%;        
+      text-align: center;
+  }
+  footer > ul {
+      display: none;
   }
 }
