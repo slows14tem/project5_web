@@ -9,7 +9,7 @@ if (probs.h1 === "HTML") imgname = html;
 ...
 return(
   ...
-  <img src={imgname} alt={probs.h1} />
+  "<img src={imgname} alt={probs.h1} />"
 )
 
 ### Object선언
