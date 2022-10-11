@@ -4,13 +4,13 @@ https://slows14tem.github.io/project5_web/
 ## props 사용하여 컴포넌트 재활용
 
 ### image
-let imgname = null;
-if (probs.h1 === "HTML") imgname = html;
-...
-return(
-  ...
-  "<img src={imgname} alt={probs.h1} />"
-)
+1. let imgname = null;
+1. if (probs.h1 === "HTML") imgname = html;
+1. ...
+1. return(
+1.  ...
+1.  "<img src={imgname} alt={probs.h1} />"
+1. )
 
 ### Object선언
 const pContent = {
